@@ -11,3 +11,19 @@ jobs:
 
       - name: Run a one-line script
         run: echo "Hello, world!"
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo "Test successfull"
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo "deployment successfull"
